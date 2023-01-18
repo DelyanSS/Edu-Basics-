@@ -1,0 +1,21 @@
+processor = float(input())
+video_card = float(input())
+ram_memmory = float(input())
+ram_capacity = int(input())
+discount = float(input())
+course_dollar = 1.57
+
+price_processor = processor*course_dollar
+price_video_card = video_card * course_dollar
+price_ram = ram_memmory*course_dollar
+all_ram = ram_capacity*price_ram
+discount_processor = price_processor * discount
+discount_video_card = price_video_card * discount
+all_processor = price_processor-discount_processor
+all_video = price_video_card-discount_video_card
+total_money = all_processor+all_video+all_ram
+
+
+
+
+print(f"Money needed - {total_money:.2f} leva.")
