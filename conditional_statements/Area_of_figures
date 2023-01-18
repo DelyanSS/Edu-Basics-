@@ -1,0 +1,19 @@
+type_figure = input()
+area = 0
+from math import pi
+
+if type_figure == "square":
+    size_a = float(input())
+    area = size_a*size_a
+elif type_figure == "rectangle":
+    size_a = float(input())
+    size_b = float(input())
+    area= size_a*size_b
+elif type_figure == "circle":
+    radius = float(input())
+    area = pi*(radius**2)
+elif type_figure == "triangle":
+    size_a = float(input())
+    height = float(input())
+    area = 1/2 * (size_a*height)
+print(f'{area:.3f}')
