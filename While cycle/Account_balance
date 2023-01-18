@@ -1,0 +1,10 @@
+deposit = 0
+
+while deposit >= 0:
+    funds = float(input())
+    print(f"Increase: {funds}")
+    deposit += funds
+    if funds == "NoMoreMoney" or funds < 0:
+        operation = deposit - funds
+        print(f"Invalid operation!")
+        print(f"Total: {operation:.2f}")
